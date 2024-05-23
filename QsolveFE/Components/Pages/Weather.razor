@@ -1,0 +1,204 @@
+﻿@page "/weather"
+
+@rendermode InteractiveServer
+@using QsolveFE.Services
+@using QsolveFE.Integration
+
+
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Weather</h1>
+
+<p>This component demonstrates showing data.</p>
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal" @onclick="() => FlagSave(false)">New Weather</button>
+
+&nbsp;
+&nbsp;
+
+
+
+ @if (weathers == null)
+{
+    <p><em>Loading...</em></p>
+} 
+ else
+{
+    <div>
+        &nbsp
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var weatherDto in weathers)
+            { 
+                <tr>
+                    <td>@weatherDto.dateTime</td>
+                    <td>@weatherDto.temperatureC</td>
+                    <td>@weatherDto.temperatureF</td>
+                    <td>@weatherDto.latitude</td>
+                    <td>@weatherDto.longitude</td>
+                    <td>@weatherDto.summary</td>
+                    <td>
+                        <button @onclick="() => FlagUpdate(true)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" dateTime="@weatherDto.dateTime" temperatureC="@weatherDto.temperatureC" temperatureF="@weatherDto.temperatureF" latitude="@weatherDto.latitude" longitude="@weatherDto.longitude" summary="@weatherDto.summary" id="@weatherDto.id">Edit Weather</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-warning" data-toggle="modal"  @onclick="() => DeleteNewWeather(weatherDto.id)">Delete</button>
+                    </td>
+                </tr>
+             } 
+        </tbody>
+    </table>
+ }
+
+@inject IHttpClientSystem IHttpClientSystem
+@code {
+    IEnumerable<WeatherDTO> weathers;
+    WeatherDTO weather = new WeatherDTO();
+    bool Update = false;
+    protected override async Task OnInitializedAsync()
+    {
+        weathers = await IHttpClientSystem.GetRequest<List<WeatherDTO>>("GetWeather");
+    }   
+
+    @functions {
+
+        async Task SaveNewWeather()
+        {
+
+            if(Update == false)
+                await IHttpClientSystem.PostRequest<WeatherDTO>(weather, "AddWeather");
+            else
+                await IHttpClientSystem.PutRequest<WeatherDTO>(weather, "UpdateWeather");
+        }
+    }
+
+    @functions {
+
+        async Task DeleteNewWeather(Guid id)
+        {
+            Console.WriteLine("Hello World!");
+            await IHttpClientSystem.PostRequest<WeatherDTO>(id, "DeleteWeather");
+            await IHttpClientSystem.GetRequest<List<WeatherDTO>>("GetWeather");
+
+        }
+    }
+    public void FlagSave(bool flagSave)
+    {
+        Update = flagSave;
+    }
+
+    public void FlagUpdate(bool flagUpdate)
+    {
+        Update = flagUpdate;
+    }
+
+
+}
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Weather</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="weatherModal">
+                    <div class="form-group">
+                        <label for="date" class="col-form-label">Date:</label>
+                        <input name="dateTime" @bind="weather.dateTime" type="datetime-local" class="form-control" id="dateTime">
+                    </div>
+                    <div class="form-group">
+                        <label for="temperatureC" class="col-form-label">Temperature C:</label>
+                        <input name="temperatureC" @bind="weather.temperatureC" type="text" class="form-control" id="temperatureC">
+                    </div>
+                    <div class="form-group">
+                        <label for="temperatureF" class="col-form-label">Temperature F:</label>
+                        <input  @bind="weather.temperatureF"  type="text" class="form-control" id="temperatureF">
+                    </div>
+                    <div class="form-group">
+                        <label for="summary" class="col-form-label">Summary:</label>
+                        <input @bind="weather.summary"  type="text" class="form-control" id="summary">
+                    </div>
+                    <div class="form-group">
+                        <label for="latitude" class="col-form-label">Latitude:</label>
+                        <input  @bind="weather.latitude" type="text" class="form-control" id="latitude">
+                    </div>
+                    <div class="form-group">
+                        <label for="longitude" class="col-form-label">Longitude:</label>
+                        <input  @bind="weather.longitude"  type="text" class="form-control" id="longitude">
+                    </div>
+                    <div class="form-group" style="display:none">
+                        <input @bind="weather.id" type="text" class="form-control" id="id">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button @onclick="() => SaveNewWeather()" type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+    $('#exampleModal').on('show.bs.modal', function (e) {
+
+        var opener = e.relatedTarget;
+        var id = $(opener).attr('id');
+        var dateTime = $(opener).attr('dateTime');
+        var temperatureC = $(opener).attr('temperatureC');
+        var temperatureF = $(opener).attr('temperatureF');
+        var latitude = $(opener).attr('latitude');
+        var longitude = $(opener).attr('longitude');
+        var summary = $(opener).attr('summary');
+
+        var myElementId = document.getElementById('id');
+        var myElementDateTime = document.getElementById('dateTime');
+        var myElementTemperatureC = document.getElementById('temperatureC');
+        var myElementTemperatureF = document.getElementById('temperatureF');
+        var myElementLatitude = document.getElementById('latitude');
+        var myElementLongitude = document.getElementById('longitude');
+        var myElementSummary = document.getElementById('summary');
+
+        myElementId.value = id;
+        myElementDateTime.value = dateTime
+        myElementTemperatureC.value = temperatureC;
+        myElementTemperatureF.value = temperatureF;
+        myElementLatitude.value = latitude;
+        myElementLongitude.value = longitude;
+        myElementSummary.value = summary;
+
+        var event = new Event('change');
+        myElementId.dispatchEvent(event);
+        myElementDateTime.dispatchEvent(event);
+        myElementTemperatureC.dispatchEvent(event);
+        myElementTemperatureF.dispatchEvent(event);
+        myElementLatitude.dispatchEvent(event);
+        myElementLongitude.dispatchEvent(event);
+        myElementSummary.dispatchEvent(event);
+
+    });
+
+    $('#exampleModal').on('hidden.bs.modal', function () {
+        location.reload();
+    })
+</script>
+    

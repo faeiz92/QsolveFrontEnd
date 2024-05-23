@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hI3jLcFw5CCwuunujppvphX5TtXXxzqPq9/UX84wXdeEsmAzlwx+RAm3qU32/+GhKtAHjF4B5b8iOs8A+SeFMQ==",
+  "success": true,
+  "projectFilePath": "D:\\QsolveFE\\QsolveFE\\QsolveFE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\faeiz\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\faeiz\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\faeiz\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

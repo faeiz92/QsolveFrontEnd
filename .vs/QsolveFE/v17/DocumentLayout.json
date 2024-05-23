@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\QsolveFE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\integration\\httpclientsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\integration\\httpclientsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\services\\ihttpclientsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\services\\ihttpclientsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\integration\\weatherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\integration\\weatherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|d:\\qsolvefe\\qsolvefe\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0937EDCA-487F-420B-813B-E90E602AF6E3}|QsolveFE\\QsolveFE.csproj|solutionrelative:qsolvefe\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 191,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "QsolveFE\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "QsolveFE\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T02:48:10.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "QsolveFE\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "QsolveFE\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T02:48:07.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "QsolveFE\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "QsolveFE\\Components\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T12:45:13.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HttpClientSystem.cs",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Integration\\HttpClientSystem.cs",
+              "RelativeDocumentMoniker": "QsolveFE\\Integration\\HttpClientSystem.cs",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Integration\\HttpClientSystem.cs",
+              "RelativeToolTip": "QsolveFE\\Integration\\HttpClientSystem.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAMwDYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:41:27.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherDTO.cs",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Integration\\WeatherDTO.cs",
+              "RelativeDocumentMoniker": "QsolveFE\\Integration\\WeatherDTO.cs",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Integration\\WeatherDTO.cs",
+              "RelativeToolTip": "QsolveFE\\Integration\\WeatherDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:32:10.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IHttpClientSystem.cs",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Services\\IHttpClientSystem.cs",
+              "RelativeDocumentMoniker": "QsolveFE\\Services\\IHttpClientSystem.cs",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Services\\IHttpClientSystem.cs",
+              "RelativeToolTip": "QsolveFE\\Services\\IHttpClientSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T12:07:08.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "D:\\QsolveFE\\QsolveFE\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "QsolveFE\\Components\\Pages\\Weather.razor",
+              "ToolTip": "D:\\QsolveFE\\QsolveFE\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "QsolveFE\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAALQAAAAAAAAAAAAAAGMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T05:14:36.995Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
